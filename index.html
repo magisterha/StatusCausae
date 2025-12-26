@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Causae Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="lang-switcher">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="zh">繁中</button>
+        </nav>
+
+        <header>
+            <h1 id="app-title">Cargando...</h1>
+            <div id="app-desc" class="description-box">
+                </div>
+        </header>
+
+        <main class="prompt-area">
+            <div class="code-header">
+                <span class="label">System Prompt</span>
+                <button id="copy-btn" class="copy-btn">Copiar</button>
+            </div>
+            <pre><code id="prompt-output">Selecciona un idioma...</code></pre>
+        </main>
+
+        <footer>
+            <p>Status Causae Tool v1.0 | Retórica Forense para IA</p>
+        </footer>
+    </div>
+
+    <script type="module" src="logic.js"></script>
+</body>
+</html>
